@@ -26,6 +26,7 @@ module.exports.verifyUser = (req, res, next) => {
 			.catch(next);
 	}
 };
+
 module.exports.veryAdmin = (req, res, next) => {
 	if (!req.user) {
 		let err = new Error('Please login first');
